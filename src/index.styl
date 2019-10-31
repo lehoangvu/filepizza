@@ -11,7 +11,10 @@ light-red = #E23430
 light-yellow = #FFE476
 red = #B11C17
 yellow = #DEAC11
-
+*{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
 @keyframes rotate {
     from { transform: rotate(0deg) }
     to { transform: rotate(360deg) }
@@ -28,6 +31,12 @@ h1 {
     margin: 0 0 10px;
 }
 
+h2 {
+    font: 28px "Roboto", sans-serif;
+    text-align: center;
+    margin: 0 0 10px;
+}
+
 a {
   color: gray
 }
@@ -38,7 +47,7 @@ strong {
 
 p {
     color: gray;
-    font: 18px/22px "Quicksand", sans-serif;
+    font: 18px/22px "Roboto", sans-serif;
     text-align: center;
     margin: 0;
 
@@ -49,7 +58,7 @@ p {
 
 small {
     color: gray;
-    font: 12px/22px "Quicksand", sans-serif;
+    font: 12px/22px "Roboto", sans-serif;
     text-align: center;
     margin: 0;
 
@@ -76,7 +85,7 @@ small {
     }
 
     p {
-        font: 12px/20px "Quicksand", sans-serif;
+        font: 12px/20px "Roboto", sans-serif;
         @media (max-width: 600px) {
           font-size 14px
         }
@@ -95,12 +104,36 @@ small {
     }
 }
 
+header.main-header {
+    background: #deac11;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    a {
+        display: flex;
+        align-items: center;
+        font-size: 31px;
+        font-family: Lobster Two;
+        color: #b11c17;
+        text-decoration: none;
+        font-size: 40px;
+        img {
+            width: 38px;
+            margin-right: 4px;
+        }
+    }
+
+}
+
+
 .page {
     display: flex
     flex-direction: column;
     justify-content: center;
     height: 100%;
     min-height: 640px;
+    padding-bottom: 40px;
 }
 
 .drop-zone {
@@ -118,7 +151,7 @@ small {
             color: white
             content: 'DROP TO UPLOAD'
             display: block
-            font: 24px/40px "Quicksand", sans-serif
+            font: 24px/40px "Roboto", sans-serif
             margin-top: -20px
             position: relative
             text-shadow: 0 1px dark-gray
@@ -168,7 +201,7 @@ small {
     }
 
     .spinner-name {
-        font: bold 18px/20px "Quicksand", sans-serif
+        font: bold 18px/20px "Roboto", sans-serif
         text-align: center
         color: white
         overflow: hidden
@@ -178,7 +211,7 @@ small {
     }
 
     .spinner-size {
-        font: italic 12px/20px "Quicksand", sans-serif
+        font: italic 12px/20px "Roboto", sans-serif
         text-align: center
         color: white
         overflow: hidden
@@ -215,7 +248,7 @@ small {
         padding: 10px 20px
         text-align: center
         width: 100%
-        font: 14px/1 "Quicksand", sans-serif;
+        font: 14px/1 "Roboto", sans-serif;
         border-radius: 0 0 4px 4px
 
         span {
@@ -241,7 +274,7 @@ small {
 
 .data {
     color: gray
-    font: 14px/20px "Quicksand", sans-serif
+    font: 14px/20px "Roboto", sans-serif
     text-align: center
     overflow: hidden
 
@@ -262,7 +295,7 @@ small {
     max-width: 800px
     margin: 0 auto
     border-radius: 4px
-    font: bold 18px/20px "Quicksand", sans-serif
+    font: bold 18px/20px "Roboto", sans-serif
     transition: 0.25s
     cursor: pointer
     text-transform: uppercase
@@ -297,7 +330,7 @@ small {
     }
 
     .progress-bar-text {
-        font: 14px/60px "Quicksand", sans-serif
+        font: 14px/60px "Roboto", sans-serif
         color: white
         text-align: center
         text-transform: uppercase
@@ -369,7 +402,7 @@ small {
     display: inline-block
     cursor: pointer
     transition: all 0.25s ease
-    font: 12px/1 "Quicksand", sans-serif
+    font: 12px/1 "Roboto", sans-serif
     color: white
 
     &:hover, &:active {

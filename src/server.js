@@ -50,6 +50,10 @@ if (!process.env.QUIET) {
   );
 }
 
+app.get("/ping", function(req, res){
+  res.send('ok')
+});
+
 app.get("/app.js", require("./middleware/javascript"));
 app.use(require("./middleware/static"));
 

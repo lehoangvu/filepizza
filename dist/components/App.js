@@ -90,11 +90,11 @@ var App = function (_React$Component) {
           _react2.default.createElement("meta", { property: "og:url", content: "https://file.ezpic.net" }),
           _react2.default.createElement("meta", {
             property: "og:title",
-            content: "EzFile - G\u1EEDi file c\u1EE7a b\u1EA1n cho b\u1EA1n b\xE8 tr\u1EF1c ti\u1EBFp."
+            content: "EzFile - Chia s\u1EBB file c\u1EE7a b\u1EA1n cho b\u1EA1n b\xE8 tr\u1EF1c ti\u1EBFp."
           }),
           _react2.default.createElement("meta", {
             property: "og:description",
-            content: "G\u1EEDi file tr\u1EF1c ti\u1EBFp \u0111\u1EBFn b\u1EA1n b\xE8, ch\u1EA5t l\u01B0\u1EE3ng gi\u1EEF nguy\xEAn, ho\xE0n to\xE0n mi\u1EC5n ph\xED"
+            content: "Chia s\u1EBB file tr\u1EF1c ti\u1EBFp \u0111\u1EBFn b\u1EA1n b\xE8, ch\u1EA5t l\u01B0\u1EE3ng gi\u1EEF nguy\xEAn, mi\u1EC5n ph\xED, kh\xF4ng c\u1EA7n \u0111\u0103ng k\xFD."
           }),
           _react2.default.createElement("meta", {
             property: "og:image",
@@ -103,8 +103,9 @@ var App = function (_React$Component) {
           _react2.default.createElement(
             "title",
             null,
-            "EzFile - G\u1EEDi file c\u1EE7a b\u1EA1n cho b\u1EA1n b\xE8 tr\u1EF1c ti\u1EBFp."
+            "EzFile - Chia s\u1EBB file c\u1EE7a b\u1EA1n cho b\u1EA1n b\xE8 tr\u1EF1c ti\u1EBFp."
           ),
+          _react2.default.createElement("meta", { name: "description", content: "Chia s\u1EBB file tr\u1EF1c ti\u1EBFp \u0111\u1EBFn b\u1EA1n b\xE8, ch\u1EA5t l\u01B0\u1EE3ng gi\u1EEF nguy\xEAn, mi\u1EC5n ph\xED, kh\xF4ng c\u1EA7n \u0111\u0103ng k\xFD." }),
           _react2.default.createElement("link", { rel: "stylesheet", href: "/fonts/fonts.css" }),
           _react2.default.createElement(_Bootstrap2.default, { data: this.props.data }),
           _react2.default.createElement("script", { src: "https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js" }),

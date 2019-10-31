@@ -57,6 +57,7 @@ export default class App extends React.Component {
           <title>EzFile - Chia sẻ file của bạn cho bạn bè trực tiếp.</title>
           <meta name="description" content="Chia sẻ file trực tiếp đến bạn bè, chất lượng giữ nguyên, miễn phí, không cần đăng ký." />
           <link rel="stylesheet" href="/fonts/fonts.css" />
+          <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=vietnamese" rel="stylesheet" />
           <Bootstrap data={this.props.data} />
           <script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js" />
           <script src="/app.js" />
@@ -64,13 +65,18 @@ export default class App extends React.Component {
         </FrozenHead>
 
         <body>
+          <header className="main-header">
+            <a href="/?src=header">
+              <img src="http://ezpic.net/images/logo_128.png" />EzFile
+            </a>
+          </header>
           <div className="container">
             {this.state.isSupported ? <RouteHandler /> : <ErrorPage />}
           </div>
           <footer className="footer">
             <p className="byline">
               <a href="https://ezpic.net?src=ezfile_footer" target="_blank">
-                Upload ảnh miễn phí
+                Upload ảnh miễn phí với <b>Ezpic.net</b>
               </a>
             </p>
           </footer>

@@ -35,7 +35,7 @@ var DownloadButton = function (_React$Component) {
     value: function onClick(e) {
       this.props.onClick(e);
       if (typeof ga != 'undefined') {
-        ga('send', 'event', 'Upload', 'download file', '');
+        ga('gtm1.send', 'event', 'Upload', 'download file', '');
       }
     }
   }, {

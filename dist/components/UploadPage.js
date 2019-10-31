@@ -82,9 +82,8 @@ var UploadPage = function (_React$Component) {
     value: function handleSelectedFile(event) {
       var files = event.target.files;
       if (files.length > 0) {
-        console.log(files[0]);
         if (typeof ga != 'undefined') {
-          ga('send', 'event', 'Upload', 'select file', files[0].name);
+          ga('gtm1.send', 'event', 'Upload', 'select file', files[0].name);
         }
         _UploadActions2.default.uploadFile(files[0]);
       }
@@ -101,19 +100,25 @@ var UploadPage = function (_React$Component) {
             _react2.default.createElement(
               'div',
               { className: 'page' },
-              _react2.default.createElement(_Spinner2.default, { dir: 'up' }),
+              _react2.default.createElement(
+                'div',
+                { onClick: function onClick() {
+                    document.querySelectorAll('input[type=file]')[0].click();
+                  } },
+                _react2.default.createElement(_Spinner2.default, { dir: 'up' })
+              ),
               _react2.default.createElement(
                 'h1',
                 null,
                 'Ezpic'
               ),
               _react2.default.createElement(
-                'p',
+                'h2',
                 null,
                 'G\u1EEDi v\xE0 nh\u1EADn file mi\u1EC5n ph\xED'
               ),
               _react2.default.createElement(
-                'small',
+                'p',
                 { className: 'notice' },
                 'File c\u1EE7a b\u1EA1n \u0111\u01B0\u1EE3c g\u1EEDi tr\u1EF1c ti\u1EBFp \u0111\u1EBFn ng\u01B0\u1EDDi nh\u1EADn, ch\xFAng t\xF4i kh\xF4ng l\u01B0u tr\u1EEF b\u1EA5t c\u1EE9 th\xF4ng tin n\xE0o.'
               ),
@@ -164,9 +169,9 @@ var UploadPage = function (_React$Component) {
               name: this.state.fileName,
               size: this.state.fileSize }),
             _react2.default.createElement(
-              'p',
+              'h2',
               null,
-              'G\u1EEDi link cho b\u1EA1n b\xE8 \u0111\u1EC3 t\u1EA3i file n\xE0y v\u1EC1!'
+              'G\u1EEDi v\xE0 nh\u1EADn file mi\u1EC5n ph\xED'
             ),
             _react2.default.createElement(
               'small',
