@@ -31,7 +31,7 @@ export default class ChromeNotice extends React.Component {
 
   render() {
     if (this.state.active) {
-      return <p className="notice">Chrome has issues downloading files > 500 MB. Try using Firefox instead.</p>
+      return <p className="notice">Chrome gặp vấn đề khi dowload file > 500 MB. Hãy dùng Firefox thay thế.</p>
     } else {
       return null
     }

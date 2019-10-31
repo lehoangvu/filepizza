@@ -35,21 +35,20 @@ export default class App extends React.Component {
         <FrozenHead>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="monetization" content="$twitter.xrptipbot.com/kernio" />
-          <meta property="og:url" content="https://file.pizza" />
+          <meta property="og:url" content="https://file.ezpic.net" />
           <meta
             property="og:title"
-            content="FilePizza - Your files, delivered."
+            content="EzFile - Gửi file của bạn cho bạn bè trực tiếp."
           />
           <meta
             property="og:description"
-            content="Peer-to-peer file transfers in your web browser."
+            content="Gửi file trực tiếp đến bạn bè, chất lượng giữ nguyên, hoàn toàn miễn phí"
           />
           <meta
             property="og:image"
-            content="https://file.pizza/images/fb.png"
+            content="https://file.ezpic.net/images/fb.png"
           />
-          <title>FilePizza - Your files, delivered.</title>
+          <title>EzFile - Gửi file của bạn cho bạn bè trực tiếp.</title>
           <link rel="stylesheet" href="/fonts/fonts.css" />
           <Bootstrap data={this.props.data} />
           <script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js" />
@@ -61,26 +60,9 @@ export default class App extends React.Component {
             {this.state.isSupported ? <RouteHandler /> : <ErrorPage />}
           </div>
           <footer className="footer">
-            <p>
-              BTC Donations: <strong>1P7yFQAC3EmpvsB7K9s6bKPvXEP1LPoQnY</strong>
-            </p>
-
             <p className="byline">
-              Cooked up by{" "}
-              <a href="http://kern.io" target="_blank">
-                Alex Kern
-              </a>{" "}
-              &amp;{" "}
-              <a href="http://neeraj.io" target="_blank">
-                Neeraj Baid
-              </a>{" "}
-              while eating <strong>Sliver</strong> @ UC Berkeley &middot;{" "}
-              <a href="https://github.com/kern/filepizza#faq" target="_blank">
-                FAQ
-              </a>{" "}
-              &middot;{" "}
-              <a href="https://github.com/kern/filepizza" target="_blank">
-                Fork us
+              <a href="https://ezpic.net?src=ezfile_footer" target="_blank">
+                Upload ảnh miễn phí
               </a>
             </p>
           </footer>

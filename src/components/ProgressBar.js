@@ -20,7 +20,7 @@ export default class ProgressBar extends React.Component {
 
     return <div className={classes}>
       {failed
-        ? <div className="progress-bar-text">Failed</div>
+        ? <div className="progress-bar-text">Lỗi</div>
         : inProgress ? <div
           className="progress-bar-inner"
           style={{width: formatted}}>
@@ -28,7 +28,7 @@ export default class ProgressBar extends React.Component {
             {formatted}
           </div>
         </div>
-        : <div className="progress-bar-text">Delivered</div>}
+        : <div className="progress-bar-text">Tải xong</div>}
       </div>
   }
 }

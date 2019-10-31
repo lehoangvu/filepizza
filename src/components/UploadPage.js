@@ -48,13 +48,13 @@ export default class UploadPage extends React.Component {
 
             <Spinner dir="up" />
 
-            <h1>FilePizza</h1>
-            <p>Free peer-to-peer file transfers in your browser.</p>
-            <small className="notice">We never store anything. Files only served fresh.</small>
+            <h1>Ezpic</h1>
+            <p>Gửi và nhận file miễn phí</p>
+            <small className="notice">File của bạn được gửi trực tiếp đến người nhận, chúng tôi không lưu trữ bất cứ thông tin nào.</small>
             <p>
               <label className="select-file-label">
                 <input type="file" onChange={this.handleSelectedFile} required/>
-                <span>select a file</span>
+                <span>Chọn file</span>
               </label>
             </p>
           </div>
@@ -65,7 +65,7 @@ export default class UploadPage extends React.Component {
 
           <Spinner dir="up" animated />
 
-          <h1>FilePizza</h1>
+          <h1>Ezpic</h1>
           <p>Processing...</p>
 
         </div>
@@ -73,13 +73,13 @@ export default class UploadPage extends React.Component {
       case 'uploading':
         return <div className="page">
 
-          <h1>FilePizza</h1>
+          <h1>Ezpic</h1>
           <Spinner dir="up" animated
             name={this.state.fileName}
             size={this.state.fileSize} />
 
-          <p>Send someone this link to download.</p>
-          <small className="notice">This link will work as long as this page is open.</small>
+          <p>Gửi link cho bạn bè để tải file này về!</p>
+          <small className="notice">HÃY GIỮ TRANG NÀY LUÔN MỞ ĐỂ BẠN BÈ CỦA BẠN CÓ THỂ TẢI FILE!</small>
           <p>Peers: {this.state.peers} &middot; Up: {formatSize(this.state.speedUp)}</p>
           <Tempalink token={this.state.token} shortToken={this.state.shortToken} />
 
