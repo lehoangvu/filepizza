@@ -110,7 +110,7 @@ var UploadPage = function (_React$Component) {
               _react2.default.createElement(
                 'h1',
                 null,
-                'Ezpic'
+                'EzFile'
               ),
               _react2.default.createElement(
                 'h2',
@@ -147,7 +147,7 @@ var UploadPage = function (_React$Component) {
             _react2.default.createElement(
               'h1',
               null,
-              'Ezpic'
+              'EzFile'
             ),
             _react2.default.createElement(
               'p',
@@ -163,7 +163,7 @@ var UploadPage = function (_React$Component) {
             _react2.default.createElement(
               'h1',
               null,
-              'Ezpic'
+              'EzFile'
             ),
             _react2.default.createElement(_Spinner2.default, { dir: 'up', animated: true,
               name: this.state.fileName,

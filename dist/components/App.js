@@ -107,6 +107,7 @@ var App = function (_React$Component) {
           ),
           _react2.default.createElement("meta", { name: "description", content: "Chia s\u1EBB file tr\u1EF1c ti\u1EBFp \u0111\u1EBFn b\u1EA1n b\xE8, ch\u1EA5t l\u01B0\u1EE3ng gi\u1EEF nguy\xEAn, mi\u1EC5n ph\xED, kh\xF4ng c\u1EA7n \u0111\u0103ng k\xFD." }),
           _react2.default.createElement("link", { rel: "stylesheet", href: "/fonts/fonts.css" }),
+          _react2.default.createElement("link", { href: "https://fonts.googleapis.com/css?family=Roboto&display=swap&subset=vietnamese", rel: "stylesheet" }),
           _react2.default.createElement(_Bootstrap2.default, { data: this.props.data }),
           _react2.default.createElement("script", { src: "https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js" }),
           _react2.default.createElement("script", { src: "/app.js" })
@@ -114,6 +115,16 @@ var App = function (_React$Component) {
         _react2.default.createElement(
           "body",
           null,
+          _react2.default.createElement(
+            "header",
+            { className: "main-header" },
+            _react2.default.createElement(
+              "a",
+              { href: "/?src=header" },
+              _react2.default.createElement("img", { src: "http://ezpic.net/images/logo_128.png" }),
+              "EzFile"
+            )
+          ),
           _react2.default.createElement(
             "div",
             { className: "container" },
@@ -128,7 +139,12 @@ var App = function (_React$Component) {
               _react2.default.createElement(
                 "a",
                 { href: "https://ezpic.net?src=ezfile_footer", target: "_blank" },
-                "Upload \u1EA3nh mi\u1EC5n ph\xED"
+                "Upload \u1EA3nh mi\u1EC5n ph\xED v\u1EDBi ",
+                _react2.default.createElement(
+                  "b",
+                  null,
+                  "Ezpic.net"
+                )
               )
             )
           ),
