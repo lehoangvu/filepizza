@@ -35,6 +35,10 @@ export default class UploadPage extends React.Component {
   handleSelectedFile(event) {
     let files = event.target.files
     if (files.length > 0) {
+      console.log(files[0])
+      if(typeof ga != 'undefined') {
+        ga('send', 'event', 'Upload', 'select file', files[0].name)
+      }
       UploadActions.uploadFile(files[0])
     }
   }

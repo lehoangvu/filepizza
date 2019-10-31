@@ -82,6 +82,10 @@ var UploadPage = function (_React$Component) {
     value: function handleSelectedFile(event) {
       var files = event.target.files;
       if (files.length > 0) {
+        console.log(files[0]);
+        if (typeof ga != 'undefined') {
+          ga('send', 'event', 'Upload', 'select file', files[0].name);
+        }
         _UploadActions2.default.uploadFile(files[0]);
       }
     }

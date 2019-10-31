@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = require("react");
+var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -31,19 +31,22 @@ var DownloadButton = function (_React$Component) {
   }
 
   _createClass(DownloadButton, [{
-    key: "onClick",
+    key: 'onClick',
     value: function onClick(e) {
       this.props.onClick(e);
+      if (typeof ga != 'undefined') {
+        ga('send', 'event', 'Upload', 'download file', '');
+      }
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "button",
+        'button',
         {
-          className: "download-button",
+          className: 'download-button',
           onClick: this.onClick },
-        "Download"
+        'Download'
       );
     }
   }]);
@@ -57,4 +60,4 @@ exports.default = DownloadButton;
 DownloadButton.propTypes = {
   onClick: _react2.default.PropTypes.func.isRequired
 };
-module.exports = exports["default"];
+module.exports = exports['default'];
