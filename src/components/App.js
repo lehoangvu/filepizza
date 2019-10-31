@@ -44,17 +44,18 @@ export default class App extends React.Component {
           <meta property="og:url" content="https://file.ezpic.net" />
           <meta
             property="og:title"
-            content="EzFile - Gửi file của bạn cho bạn bè trực tiếp."
+            content="EzFile - Chia sẻ file của bạn cho bạn bè trực tiếp."
           />
           <meta
             property="og:description"
-            content="Gửi file trực tiếp đến bạn bè, chất lượng giữ nguyên, hoàn toàn miễn phí"
+            content="Chia sẻ file trực tiếp đến bạn bè, chất lượng giữ nguyên, miễn phí, không cần đăng ký."
           />
           <meta
             property="og:image"
             content="https://file.ezpic.net/images/fb.png"
           />
-          <title>EzFile - Gửi file của bạn cho bạn bè trực tiếp.</title>
+          <title>EzFile - Chia sẻ file của bạn cho bạn bè trực tiếp.</title>
+          <meta name="description" content="Chia sẻ file trực tiếp đến bạn bè, chất lượng giữ nguyên, miễn phí, không cần đăng ký.">
           <link rel="stylesheet" href="/fonts/fonts.css" />
           <Bootstrap data={this.props.data} />
           <script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js" />

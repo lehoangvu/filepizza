@@ -9,7 +9,7 @@ export default class DownloadButton extends React.Component {
   onClick(e) {
     this.props.onClick(e)
     if(typeof ga != 'undefined') {
-      ga('send', 'event', 'Upload', 'download file', '')
+      ga('gtm1.send', 'event', 'Upload', 'download file', '')
     }
   }
 
