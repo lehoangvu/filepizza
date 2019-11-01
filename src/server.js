@@ -7,7 +7,7 @@ var https = require("https");
 var ice = require("./ice");
 var socketIO = require("socket.io");
 var winston = require("winston");
-var axios = require("axios");
+// var axios = require("axios");
 
 var app = express();
 var server = http.Server(app);
@@ -75,11 +75,11 @@ io.on("connection", function(socket) {
       upload.fileSize = metadata.fileSize;
       upload.fileType = metadata.fileType;
       upload.infoHash = metadata.infoHash;
-      try{
-        axios.post("https://hooks.slack.com/services/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", {"text":"<@vu.le> Hozaa! Someone stream file!"})
-      }catch(e) {
+      // try{
+      //   axios.post("https://hooks.slack.com/services/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", {"text":"<@vu.le> Hozaa! Someone stream file!"})
+      // }catch(e) {
 
-      }
+      // }
       res({ token: upload.token, shortToken: upload.shortToken });
     });
   });
